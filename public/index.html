@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Suggestions</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kvothe's Books</a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <a class="hamburger" href="#">&#9776;</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" data-toggle="collapse" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row text-left">
+            <div class="col-sm-5 hero-container">
+              <div class="hero-title">You haven't ready anything yet.</div>
+              <p class="lead">
+                They say outside of a dag, a book is a man's best friend (inside of a dog is too dark to ready). Come
+                in, chat with us, share your favorite books & films and we'll introduce you to some of the greatest
+                friends you'll ever know.
+              </p>
+              <div class=" d-flex justify-content-center">
+                <a class="hero-button btn btn-success btn-lg" href="#" role="button">Come visit us!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row search d-flex justify-content-center">
+        <div class="col-sm-5">
+          <div class="input-group ">
+            <div class="input-group-prepend">
+              <button class="btn btn-success" onclick="queryBooks(null, false)" type="button">Search</button>
+            </div>
+            <input
+              type="text"
+              id="bookQuery"
+              class="form-control"
+              placeholder="Find a book!"
+              aria-label=""
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+      </div>
+      <span>
+        <h3 id="searchTitle"></h3>
+        <div class="row" id="suggestions"></div>
+      </span>
+    </div>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted"><span id="date"></span>&nbsp;Created by Evan Meeks</span>
+      </div>
+    </footer>
+      <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
