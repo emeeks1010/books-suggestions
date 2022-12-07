@@ -5,7 +5,7 @@
   "main": "script.js",
   "dependencies": {
     "eslint": "^6.7.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "open": "^7.0.0",
     "path": "^0.12.7",
     "prettier": "^1.19.1"
